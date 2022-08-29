@@ -41,7 +41,7 @@ class StreamLinkDialog(
             val headerText = binding.headerInputEt.text.toString()
             val header = StreamHeaderUtil.string2Header(headerText)
 
-            callback.invoke(result.decodeUrl(), header)
+            callback.invoke(result, header)
             dismiss()
         }
 
